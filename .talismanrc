@@ -1,0 +1,6 @@
+fileignoreconfig:
+- filename: yarn.lock
+  checksum: 6972b9e4dea9d1499ceecb576ae589a22b3bfc090ec682bab122ac61f40b1a49
+- filename: src/components/form/steps/Finance.tsx
+  checksum: 78b011585239e804c24f8c0e9ee9a3ff3682c8385e4727b99c24d40da008d686
+version: ""

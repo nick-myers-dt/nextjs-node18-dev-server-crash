@@ -1,0 +1,154 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.square-button {
+  flex: 1;
+  min-width: calc(25% - 16px);
+  margin: 8px;  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;  
+  background-color: #f2f2f2;  
+  padding: 1em;
+}
+
+.square-button:hover {
+  background-color: #e7e7e7;
+}
+
+@media (max-width: 768px) {
+  .square-button {
+    min-width: calc(50% - 16px); 
+  }
+}
+
+@media (max-width: 400px) {
+  .square-button {
+    min-width: 100%; 
+  }
+}
+
+
+h1 > a {
+  color: initial;
+  text-decoration: initial;
+}
+
+a {
+  text-decoration: none;
+  color: #070dca;
+}
+
+.form-field {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.form-field.error {
+  border: 1px solid #ca0707;
+}
+
+.form-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  margin-top: 1rem;
+}
+
+.submit-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+}
+
+.submit-button:hover {
+  background-color: #004186;
+}
+
+.submit-button:disabled {
+  background-color: #e7e7e7;
+  cursor: not-allowed;
+}
+
+.form-label {
+  font-size: 0.8rem;
+  text-transform: uppercase; 
+  font-weight: bold; 
+}
+
+.reset-button {
+  background-color: black;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  margin-top: 2rem;
+  font-weight: 700;
+  transition: background-color 0.3s ease; 
+  border: 1px solid white;
+}
+
+.reset-button:hover {
+  background-color: #e7e7e7;
+  color: black;
+  border: 1px solid black;
+}
+
+.form-button {
+  background-color: white;
+  color: #454545; 
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+  border: 1px solid #454545; 
+  border-radius: 0.25rem; 
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06); 
+  
+}
+
+.form-button:hover {
+  background-color: #f1f1f1; 
+}
+
+.error-message {
+  color: #ca0707;
+  font-size: 0.8rem;
+  margin-top: 0.1rem;
+  margin-bottom: 0.4rem;
+}
+
+.overlay {
+  position: fixed;
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  height: 80%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%;
+  text-align: center;
+}
